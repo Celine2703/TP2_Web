@@ -1,66 +1,115 @@
-header img {
-    width: 10%;
-    height: 40%;
-    border: 1px solid rgb(30, 3, 73);
-}  
-h1 {
-    text-align: center;
-    color: #0e0237e2;
-    font-size: 36px;
-}
-h2 {
-    color: #0e0237a7;
-    font-size: 24px;
-}
-a {
-    display: block;
-    font-size: 12px;
-    color: white;
-    text-align: right;
-}
-body {
-    background-color: #0b042d34;
-    color: rgb(11, 6, 39);
-    font-family: Arial, sans-serif;
-    width: 80%;
-    padding: 10;
-    margin: 0;
-}
-section {
-    text-align: justify;
-}
-#menu {
-    padding-left: 1px;
-    margin: 3px;
-    list-style-type: none;
-    display: flex;
-}  
-header {
-    position: fixed;
-    left: 0;
-    right: 0;
-    height: 50px;
-    background-image: url("../img/img.jpg");
-    padding: 1px;
-    margin: 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    background-size: cover;
-}
-footer {
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    position: fixed;
-    height: 40px;
-    background-image: url("../img/img.jpg");
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    background-size: cover;
-    padding: auto;
-}
-html {
-    margin: 0;
-    padding: 0;
-}
+/* styles.css */
 
+/* Réinitialisation des styles par défaut */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+
+  /* Styles pour le corps de la page */
+  body {
+	font-family: 'Times New Roman', serif;
+	line-height: 1.5;
+	background-color: #7956b134;
+	color: #333;
+  }
+  
+  /* Styles pour l'en-tête */
+  header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-image: url("../img/img.jpg");
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+	background-size: cover;
+	padding: 30px;
+	text-align: right;
+	transition: transform 0.3s ease;
+  }
+  
+  header a {
+	text-decoration: none;
+  }
+  
+  /* Styles pour le logo */
+  header img {
+	max-width: 100%;
+	height: 30px;
+	float: left;
+	border: 2px solid rgba(174, 0, 255, 0.336);
+  }
+  
+  /* Styles pour le menu */
+  #menu {
+	margin-top: 20px;
+  }
+  
+  #menu a {
+	display: inline-block;
+	margin-right: 10px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	transition: color 0.3s ease;
+  }
+  
+  #menu a:hover {
+	color: rgb(174, 0, 255);
+  }
+  
+  /* Styles pour la section */
+  section {
+	padding: 40px;
+	text-align: center;
+	background-color: #7956b11a;
+	margin-top: 100px;
+	margin-bottom: 20px;
+	box-shadow: 0 2px 6px rgba(174, 0, 255, 0.596);
+  }
+  
+  /* Styles pour les titres */
+  h1, h2 {
+	margin-bottom: 20px;
+	color: #02274d;
+  }
+  
+  /* Styles pour les paragraphes */
+  p {
+	margin-bottom: 10px;
+  }
+  
+  /* Styles pour les listes */
+  ul, ol {
+	margin-bottom: 10px;
+  }
+  
+  ol {
+	margin-left: 20px;
+  }
+  
+  /* Styles pour le pied de page */
+  footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-image: url("../img/img.jpg");
+	background-size: cover;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+	padding: 10px;
+	text-align: center;
+	transition: transform 0.3s ease;
+  }
+  
+  footer a {
+	text-decoration: none;
+	color: #fff;
+	transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+	color: rgb(174, 0, 255);
+  }
   
