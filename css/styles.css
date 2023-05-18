@@ -12,11 +12,14 @@
 	font-family: 'Times New Roman', serif;
 	line-height: 1.5;
 	background-color: #7956b134;
-	color: #333;
+	color: #030116;
   }
   
   /* Styles pour l'en-tête */
   header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -24,19 +27,20 @@
 	background-image: url("../img/img.jpg");
 	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 	background-size: cover;
-	padding: 30px;
+	padding: 10px;
 	text-align: right;
 	transition: transform 0.3s ease;
   }
   
   header a {
 	text-decoration: none;
+	font-family: 'Times New Roman', serif;
   }
   
   /* Styles pour le logo */
   header img {
-	max-width: 100%;
-	height: 30px;
+	height: 50px;
+	width: 85px;
 	float: left;
 	border: 2px solid rgba(174, 0, 255, 0.336);
   }
@@ -44,49 +48,69 @@
   /* Styles pour le menu */
   #menu {
 	margin-top: 20px;
+	text-align: right;
+	text-decoration: none;
+	list-style: none;
+	padding: 0;
+	display: flex;
   }
-  
+
   #menu a {
 	display: inline-block;
 	margin-right: 10px;
+	padding: 0px;
 	color: #fff;
-	text-decoration: none;
+	font-size: medium;
 	font-weight: bold;
-	transition: color 0.3s ease;
+	border: 2px solid transparent;
+	background-color: transparent;
+	transition: all 1s ease;
+  }
+
+  /* Set different background colors for each menu item */
+  #menu li:first-child a:hover {
+	background-color: #390358;
   }
   
+  #menu li:nth-child(2) a:hover {
+	background-color: #40048b;
+  }
+  
+  #menu li:nth-child(3) a:hover {
+	background-color: #014256;
+  }
+
   #menu a:hover {
+	border-color: #642f8da7;
 	color: rgb(174, 0, 255);
   }
   
   /* Styles pour la section */
   section {
-	padding: 40px;
+	padding: 30px;
 	text-align: center;
 	background-color: #7956b11a;
-	margin-top: 100px;
+	margin-top: 80px;
 	margin-bottom: 20px;
-	box-shadow: 0 2px 6px rgba(174, 0, 255, 0.596);
+	box-shadow: 0 2px 6px rgba(119, 1, 173, 0.441);
   }
   
   /* Styles pour les titres */
   h1, h2 {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
+	text-align: center;
 	color: #02274d;
   }
   
   /* Styles pour les paragraphes */
   p {
-	margin-bottom: 10px;
+	margin-bottom: 20px;
   }
   
   /* Styles pour les listes */
-  ul, ol {
-	margin-bottom: 10px;
-  }
-  
-  ol {
-	margin-left: 20px;
+  ul {
+	padding-left: 0; /* Supprimer le padding à gauche */
+	list-style-position: inside; /* Coller la numérotation à gauche */
   }
   
   /* Styles pour le pied de page */
@@ -105,6 +129,7 @@
   
   footer a {
 	text-decoration: none;
+	font-family: 'Times New Roman', serif;
 	color: #fff;
 	transition: color 0.3s ease;
   }
@@ -113,3 +138,97 @@
 	color: rgb(174, 0, 255);
   }
   
+/* Table styles */
+table {
+    width: 100%;
+	border-collapse: collapse;
+}
+
+table {
+	border: 3px dotted #7956b1;
+} 
+
+th {
+    text-align: center;
+	font-size: 18px;
+}
+
+td {
+	padding: 5px;
+	text-align: center;
+	border: 3px groove #d6d3dbce;
+}
+
+caption {
+	font-size: 30px;
+	margin: 10px;
+	text-align: center;
+	color: #02274d;
+	font-weight: bold;
+	font-family: 'Times New Roman', serif;
+}
+
+thead, tfoot {
+    color: #320562;
+	font-style: italic;
+}
+
+/* Color scheme */
+td.c1 {
+    background-color: #8f00a8;
+}
+
+td.c2 {
+    background-color: #fd0606;
+}
+
+td.c3 {
+    background-color: #f59a07;
+}
+
+td.c4 {
+    background-color: #ffea01;
+}
+
+td.c5 {
+	background-color: #1be604;
+}
+
+/* Password */
+
+form {
+	width: 100%;
+	margin: 20px;
+	padding: 20px;
+	border: 2px solid #ccc;
+	border-radius: 20px;
+	box-shadow: 0 0 6px #390358;
+	background: #f3f3f3;
+}
+  
+  legend {
+	font-size: 18px;
+	margin: 10px auto;
+	color: #390358;
+	font-weight: bold;
+	font-family: 'Times New Roman', serif;
+  }
+  
+  #add {
+	background-color: #0b6e31f3;
+	color: #fff;
+	font-size: 13px;
+	padding: 2px 5px;
+	text-transform: uppercase;
+  }
+
+  #cancel {
+	background-color: #6e0b0bf3;
+	color: #fff;
+	font-size: 13px;
+	padding: 2px 5px;
+	text-transform: uppercase;
+  }
+
+  /* width=device-width indique au navigateur de définir la largeur de la page sur la largeur de l'appareil (écran) sur lequel elle est affichée. Cela permet à la page de s'adapter à la largeur de l'écran du périphérique.
+    initial-scale=1 définit le niveau d'échelle initial de la page. Une valeur de 1 signifie qu'aucun zoom n'est appliqué initialement, et la page est affichée à sa taille réelle. */

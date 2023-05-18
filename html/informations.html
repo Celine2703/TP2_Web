@@ -5,16 +5,8 @@
             "Secure Password - Informationsn utiles"
         </title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel= "stylesheet" href="../css/styles.css">
-        <style>
-            table, td {
-            border: 1px solid #333;
-            }
-            thead, tfoot {
-            background-color: #fff;
-            color: #333;
-            }
-        </style>
     </head>
 
     <body>
@@ -22,9 +14,12 @@
             <a href="https://www.strongdm.com/blog/brute-force-attack">
                 <img src="../img/img.jpg" alt="BruteForceImage" width="500" height="200">
             </a>
-            <div id="menu">
-                <a href="./informations.html">Informations utiles</a>
-                <a href="./password.html">Générateur de mot de passe</a>
+            <div>
+                <ul id="menu">
+                    <li><a href="./accueil.html">Accueil</a></li>
+                    <li><a href="./informations.html">Informations utiles</a></li>
+                    <li><a href="./password.html">Générateur de mot de passe</a></li>
+                </ul>
             </div>
         </header>
         <section>
@@ -32,86 +27,94 @@
                 <caption>Temps nécessaire pour déchifrer un mot de passe en fonction de sa complexité</caption>
                 <thead>
                     <tr>
-                            <th style="border: 1px solid black;">Nombre de caractères</th>
-                            <th style="border: 1px solid black;">Uniquement des nombres</th>
-                            <th style="border: 1px solid black;">Uniquement des minuscules</th>
-                            <th style="border: 1px solid black;">Minuscules et majuscules</th>
-                            <th style="border: 1px solid black;">Minuscules, majuscules et chiffres</th>
-                            <th style="border: 1px solid black;">Minuscules, majuscules, chiffres et symboles</th>
+                            <th>Nombre de caractères</th>
+                            <th>Uniquement des nombres</th>
+                            <th>Uniquement des minuscules</th>
+                            <th>Minuscules et majuscules</th>
+                            <th>Minuscules, majuscules et chiffres</th>
+                            <th>Minuscules, majuscules, chiffres et symboles</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>4</td>
-                        <td>Instantané</td>
-                        <td>Instantané</td>
-                        <td>Instantané</td>
-                        <td>Instantané</td>
-                        <td>Instantané</td>
+                        <td class="c1">Instantané</td>
+                        <td class="c1">Instantané</td>
+                        <td class="c1">Instantané</td>
+                        <td class="c1">Instantané</td>
+                        <td class="c1">Instantané</td>
                     </tr>
                     <tr>
                         <td>5</td>
-                        <td>Instantané</td>
-                        <td>Instantané</td>
-                        <td>Instantané</td>
-                        <td>Instantané</td>
-                        <td>Instantané</td>
+                        <td class="c1">Instantané</td>
+                        <td class="c1">Instantané</td>
+                        <td class="c1">Instantané</td>
+                        <td class="c1">Instantané</td>
+                        <td class="c1">Instantané</td>
                     </tr>
                     <tr>
                         <td>6</td>
-                        <td>Instantané</td>
-                        <td>Instantané</td>
-                        <td>Instantané</td>
-                        <td>1 s</td>
-                        <td>5 s</td>
+                        <td class="c1">Instantané</td>
+                        <td class="c1">Instantané</td>
+                        <td class="c1">Instantané</td>
+                        <td class="c2">1 s</td>
+                        <td class="c2">5 s</td>
                     </tr>
                     <tr>
                         <td>7</td>
-                        <td>Instantané</td>
-                        <td>Instantané</td>
-                        <td>25 s</td>
-                        <td>1 min</td>
-                        <td>6 min</td>
+                        <td class="c1">Instantané</td>
+                        <td class="c1">Instantané</td>
+                        <td class="c2">25 s</td>
+                        <td class="c2">1 min</td>
+                        <td class="c2">6 min</td>
                     </tr>
                     <tr>
                         <td>8</td>
-                        <td>Instantané</td>
-                        <td>5 s</td>
-                        <td>22 min</td>
-                        <td>1 heure</td>
-                        <td>8 heures</td>
+                        <td class="c1">Instantané</td>
+                        <td class="c2">5 s</td>
+                        <td class="c2">22 min</td>
+                        <td class="c2">1 heure</td>
+                        <td class="c2">8 heures</td>
                     </tr>
                     <tr>
                         <td>9</td>
-                        <td>Instantané</td>
-                        <td>2 min</td>
-                        <td>19 heures</td>
-                        <td>3 jours</td>
-                        <td>3 semaines</td>
+                        <td class="c1">Instantané</td>
+                        <td class="c2">2 min</td>
+                        <td class="c2">19 heures</td>
+                        <td class="c3">3 jours</td>
+                        <td class="c3">3 semaines</td>
                     </tr>
                     <tr>
                         <td>10</td>
-                        <td>Instantané</td>
-                        <td>58 min</td>
-                        <td>1 mois</td>
-                        <td>7 mois</td>
-                        <td>5 années</td>
+                        <td class="c1">Instantané</td>
+                        <td class="c2">58 min</td>
+                        <td class="c3">1 mois</td>
+                        <td class="c3">7 mois</td>
+                        <td class="c3">5 années</td>
                     </tr>
                     <tr>
                         <td>11</td>
-                        <td>2 s</td>
-                        <td>1 jour</td>
-                        <td>5 années</td>
-                        <td>41 années</td>
-                        <td>400 années</td>
+                        <td class="c2">2 s</td>
+                        <td class="c3">1 jour</td>
+                        <td class="c3">5 années</td>
+                        <td class="c4">41 années</td>
+                        <td class="c4">400 années</td>
                     </tr>
                     <tr>
                         <td>12</td>
-                        <td>25 s</td>
-                        <td>3 semaines</td>
-                        <td>300 années</td>
-                        <td>2k années</td>
-                        <td>34k années</td>
+                        <td class="c2">25 s</td>
+                        <td class="c3">3 semaines</td>
+                        <td class="c4">300 années</td>
+                        <td class="c4">2k années</td>
+                        <td class="c4">34k années</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td class="c2">4 min</td>
+                        <td class="c3">1 an</td>
+                        <td class="c4">16k années</td>
+                        <td class="c4">100k années</td>
+                        <td class="c5">2m années</td>
                     </tr>
                     <!-- Repeat to row 17 -->
                 </tbody>
